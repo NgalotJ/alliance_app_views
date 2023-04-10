@@ -1,19 +1,22 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React, { useState } from 'react';
+import Slide1 from './Images/Login/Interview-rafiki 1.svg'
+import Slide2 from './Images/Login/People search-rafiki 1.svg'
+import Slide3 from './Images/Login/Podcast-rafiki 1.svg'
 
 const data = [
     {
-        image: require('./Images/Login/Interview-rafiki 1.jpg'),
+        image: Slide1,
         caption: 'Find top candidates quickly',
         //description: ''
     },
     {
-        image: require('./Images/Login/People search-rafiki 1.jpg'),
+        image: Slide2,
         caption: 'Manage users efficiently',
         //description: ''
     },
     {
-        image: require('./Images/Login/Podcast-rafiki 1.jpg'),
+        image: Slide3,
         caption: 'Streamline application process',
         //description: ''
     }
@@ -32,12 +35,12 @@ function LoginSlider() {
                 return (
                     <Carousel.Item>
                         <img
-                            className = 'd-block w-50'
+                            className = 'd-block w-100'
                             src = {slide.image}
                             alt = 'slides'
                         ></img>
                         <Carousel.Caption>
-                            <h3>{slide.caption}</h3>
+                            <h5 >{slide.caption}</h5>
                             {/* <p>{slide.description}</p> */}
                         </Carousel.Caption>
                     </Carousel.Item>
