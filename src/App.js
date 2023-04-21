@@ -1,6 +1,6 @@
 import './App.css';
 import { Login } from './Login';
-import { Status } from './Status';
+import Status from './Status';
 import { BrowserRouter, Routes, Route, NavLink} from 'react-router-dom';
 
 function App() {
