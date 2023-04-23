@@ -7,3 +7,25 @@
     border-style: solid;
     border-color: #ccc;
 }
+
+.round-circle {
+    border: 2px solid black;
+    background-color: transparent;
+    border-color: black;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.centered-modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-img-resize {
+    width: 20%;
+    height: 20%;
+}
